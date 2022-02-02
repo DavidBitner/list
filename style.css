@@ -4,10 +4,11 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: sans-serif;
 }
 
 body {
-  background: linear-gradient(to top left, #1b1ee3, #7173f5);
+  background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   box-sizing: border-box;
   padding: 3rem;
   background-repeat: no-repeat;
@@ -25,11 +26,19 @@ h1 {
   color: white;
 }
 
+#list {
+  font-size: 1.5rem;
+  margin: 2rem;
+  text-align: center;
+  list-style: none;
+}
+
 .container {
   display: grid;
-  grid-template-rows: min-content;
+  grid-template-rows: repeat(3, min-content);
   grid-template-columns: 1fr;
   gap: 30px;
+  height: 100vh;
 }
 
 .options {
@@ -40,7 +49,7 @@ h1 {
   text-align: center;
 }
 
-#fname {
+#txt {
   font-size: 2.5rem;
   text-align: center;
   height: 2.5rem;
@@ -83,11 +92,34 @@ h1 {
 }
 
 .btn {
-  background-color: #fff;
-  color: #777;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
+  color: black;
 }
+
 .btn::after {
-  background-color: #fff;
+  background-color: #dcd9d4;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(
+      at 50% 0%,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%
+    );
+  background-blend-mode: soft-light, screen;
 }
 
 .btn::after {
